@@ -1,0 +1,87 @@
+/* pages/home/home.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.product-form-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-form-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#product-form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#product-form input,
+#product-form select,
+#product-form button {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+#product-form button {
+    background-color: #ff5722; /* Cor do botão */
+    color: #fff; /* Cor do texto do botão */
+    border: none; /* Sem borda */
+    cursor: pointer; /* Mão ao passar o mouse */
+}
+
+#product-form button:hover {
+    background-color: #e64a19; /* Cor do botão ao passar o mouse */
+}
+
+.product-list {
+    display: grid; /* Grid para produtos */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsivo */
+    gap: 20px; /* Espaçamento entre produtos */
+    padding: 20px; /* Espaçamento interno */
+}
+
+.product-item {
+    background: #fff; /* Fundo branco para itens de produtos */
+    padding: 10px; /* Espaçamento interno */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 4px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza texto */
+}
+
+.product-image {
+    max-width: 100%; /* Imagem responsiva */
+    height: auto; /* Mantém proporção da imagem */
+    border-radius: 4px; /* Bordas arredondadas na imagem */
+}
