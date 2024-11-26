@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <title>Marketplace</title>
+</head>
+<body>
+    <header class="header">
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#cadastro">Cadastrar Produto</a></li>
+                <li><a href="#produtos">Ver Produtos</a></li>
+                <li><a href="#carrinho">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Bem-vindo ao Marketplace!</h1>
+        <p>Explore nossos produtos.</p>
+    </section>
+
+    <section id="cadastro" class="product-form-container">
+        <h1>Cadastrar Produto</h1>
+        <form id="product-form">
+            <input type="text" id="product-name" placeholder="Nome do Produto" required>
+            <input type="number" id="product-price" placeholder="Preço do Produto (R$)" required>
+            <input type="number" id="product-weight" placeholder="Peso Bruto (Kg)" required>
+            <input type="number" id="product-quantity" placeholder="Quantidade" required>
+            <input type="text" id="product-material" placeholder="Material" required>
+            <input type="number" id="product-min-order" placeholder="Pedido Mínimo" required>
+            <input type="text" id="product-size" placeholder="Tamanho (cm)" required>
+            <input type="text" id="product-origin" placeholder="Lugar de Origem" readonly value="Brasil">
+            <input type="text" id="product-colors" placeholder="Cores Disponíveis" required>
+            <input type="text" id="product-brand" placeholder="Marca" required>
+            <select id="product-category" required>
+                <option value="">Categoria</option>
+                <option value="Esportes e lazer">Esportes e lazer</option>
+                <option value="Vestuário e moda">Vestuário e moda</option>
+                <option value="Ferramentas">Ferramentas</option>
+                <option value="Decoração para casa">Decoração para casa</option>
+                <option value="Saúde e beleza">Saúde e beleza</option>
+                <option value="Matérias-prima">Matérias-prima</option>
+                <option value="Industrial">Industrial</option>
+            </select>
+            <input type="file" id="product-image" accept="image/*" required>
+            <button type="submit">Cadastrar</button>
+        </form>
+    </section>
+
+    <section id="produtos">
+        <h2>Produtos Cadastrados</h2>
+        <div id="product-list" class="product-list"></div>
+    </section>
+
+    <section id="carrinho">
+        <h2>Carrinho de Compras</h2>
+        <div id="carrinho-list"></div>
+    </section>
+
+    <script type="module" src="../../firebase-config.js"></script> 
+    <script type="module" src="../../pages/home/home.js"></script> 
+    <script type="module" src="../../pages/produtos/produtos.js"></script> 
+    <script type="module" src="../../pages/carrinho/carrinho.js"></script> 
+
+</body>
+</html>
