@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Cadastro de Produto</title>
+</head>
+<body>
+    <header class="header bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
+            <a class="navbar-brand" href="#">Marketplace</a>
+            <div class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="cadastro.html">Cadastrar Produto</a></li>
+                    <li class="nav-item"><a class="nav-link" href="produtos.html">Produtos à Venda</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section class="product-form-container container mt-5">
+        <h1 class="text-center">Cadastrar Produto</h1>
+        <form id="product-form" class="mt-4">
+            <!-- Campos de cadastro -->
+            <div class="form-group">
+                <input type="text" id="product-name" class="form-control" placeholder="Nome do Produto" required>
+            </div>
+            <div class="form-group">
+                <input type="number" id="product-price" class="form-control" placeholder="Preço do Produto (R$)" required>
+            </div>
+            <div class="form-group">
+                <input type="number" id="product-weight" class="form-control" placeholder="Peso Bruto (Kg)" required>
+            </div>
+            <div class="form-group">
+                <input type="number" id="product-quantity" class="form-control" placeholder="Quantidade" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="product-material" class="form-control" placeholder="Material" required>
+            </div>
+            <div class="form-group">
+                <input type="number" id="product-min-order" class="form-control" placeholder="Pedido Mínimo" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="product-size" class="form-control" placeholder="Tamanho (cm)" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="product-origin" class="form-control" placeholder="Lugar de Origem" readonly value="Brasil">
+            </div>
+            <div class="form-group">
+                <input type="text" id="product-colors" class="form-control" placeholder="Cores Disponíveis" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="product-brand" class="form-control" placeholder="Marca" required>
+            </div>
+            <div class="form-group">
+                <select id="product-category" class="form-control" required>
+                    <option value="">Categoria</option>
+                    <option value="Esportes e lazer">Esportes e lazer</option>
+                    <option value="Vestuário e moda">Vestuário e moda</option>
+                    <option value="Ferramentas">Ferramentas</option>
+                    <option value="Decoração para casa">Decoração para casa</option>
+                    <option value="Saúde e beleza">Saúde e beleza</option>
+                    <option value="Matérias-prima">Matérias-prima</option>
+                    <option value="Industrial">Industrial</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="file" id="product-image" accept=".jpg,.jpeg,.png,.gif" required class="">
+            </div>
+            <div class='form-group'>
+                <input type='password' id='user-password' placeholder='Confirme sua senha' required class='form-control'>
+            </div>
+
+            <!-- Botão de Cadastro -->
+            <button type='submit' class='btn btn-primary btn-block'>Cadastrar</button>
+        </form>
+    </section>
+
+    <!-- Scripts -->
+    <script type='module' src='../../firebase-config.js'></script>
+    <script type='module' src='home.js'></script>
+
+    <!-- Bootstrap JS (opcional) -->
+    <script src='https://code.jquery.com/jquery-3.5.1.slim.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js'></script> 
+    <script src='https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js'></script> 
+</body>
+</html>

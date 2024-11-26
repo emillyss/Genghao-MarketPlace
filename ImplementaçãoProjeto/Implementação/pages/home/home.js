@@ -69,3 +69,13 @@ document.getElementById('product-form').addEventListener('submit', async (e) => 
 });
 
 fetchProducts();
+
+window.addEventListener('hashchange', () => {
+    const sections = ['home', 'cadastro', 'produtos', 'carrinho'];
+    sections.forEach(section => {
+        document.getElementById(section).style.display = 
+            window.location.hash === `#${section}` ? 'block' : 'none';
+    });
+});
+
+window.dispatchEvent(new Event('hashchange'));
