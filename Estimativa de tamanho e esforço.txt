@@ -1,0 +1,25 @@
+﻿INTEGRANTES
+Amanda Maria Scalari - 2023003544
+Emilly Vitória Pereira da Silva - 2023008676
+Hannah Clara Silva Oliveira -2023009163
+João Pedro Cerqueira Soares - 2024002523
+Raphael Rodrigues Pereira
+
+
+Projeto Genghao MarketPlace
+
+
+2 - 
+
+
+■ 1 UCP = 3 horas de esforço. 
+■ Fatores técnicos: 1,2.
+■ Fatores ambientais: 0,9. 
+
+
+Tamanho UCP = UUCP (peso total de atores e casos de uso) * TCF (complexidade técnica) * EF (complexidade do ambiente) 
+Tamanho UCP = ((1*5+5)+(1*5+5)+5+10+5+10+5+10+5)*1,2*0,9 = 75,6 ≈ 76
+
+
+Esforço Total = Produtividade Equipe * UCP
+Esforço Total = 3 * 76 = 228
