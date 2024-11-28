@@ -1,0 +1,110 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa; /* Cor de fundo clara */
+    margin: 0;
+    padding: 0;
+    color: #333; /* Cor do texto */
+}
+
+.header {
+    background-color: #f4f4f4; /* Cor de fundo do cabeçalho */
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd; /* Borda inferior */
+}
+
+.header nav ul {
+    list-style: none; /* Remove os marcadores da lista */
+    padding: 0;
+    display: flex; /* Flexbox para disposição horizontal */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+.header nav a {
+    text-decoration: none; /* Remove o sublinhado dos links */
+    color: #000; /* Cor do texto dos links */
+    font-weight: bold; /* Texto em negrito */
+}
+
+.product-form-container {
+    padding: 20px;
+    max-width: 800px; /* Largura máxima do formulário */
+    margin: auto; /* Centraliza o formulário */
+    background-color: #fff; /* Fundo branco para o formulário */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.product-list {
+    display: grid; /* Grid para produtos */
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Responsivo */
+    gap: 20px; /* Espaçamento entre produtos */
+}
+
+.product-item {
+    background: #fff; /* Fundo branco para itens de produtos */
+    padding: 10px; /* Espaçamento interno dos itens */
+    border: 1px solid #ddd; /* Borda leve */
+    border-radius: 4px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza texto dentro dos itens */
+}
+
+.product-image {
+    max-width: 100%; /* Imagem responsiva */
+    height: auto; /* Mantém proporção da imagem */
+}
+/* style.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header {
+    background-color: #f4f4f4;
+    padding: 10px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px;
+}
+
+.header nav a {
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+}
+
+.product-form-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.product-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.product-item {
+    background: #fff;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.product-image {
+    max-width: 100%;
+}
